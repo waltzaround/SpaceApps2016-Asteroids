@@ -14,7 +14,7 @@ development:
   reconnect: false
   database: SpaceApps2016-Asteroids_development
   pool: 5
-  username: SpaceApps2016-Asteroids
+  username: inter
   password:
   host: localhost
 
@@ -27,7 +27,7 @@ test:
   reconnect: false
   database: SpaceApps2016-Asteroids_test
   pool: 5
-  username: SpaceApps2016-Asteroids
+  username: inter
   password:
   host: localhost
 

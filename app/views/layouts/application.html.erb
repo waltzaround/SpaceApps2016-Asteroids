@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Space Apps2016 Asteroids" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Space Apps2016 Asteroids" %>">
+    <link rel="icon" src=url(<%= asset_path 'exoprospect.png' %>)>
+    <title><%= content_for?(:title) ? yield(:title) : "Exo Prospect" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Exo Prospect" %>">
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>

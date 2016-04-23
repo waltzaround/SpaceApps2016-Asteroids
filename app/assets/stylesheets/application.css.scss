@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ .navbar-brand {
+   background: url('/assets/header_logo.png') center / contain no-repeat;
+   width: 100px;
+   margin-left: -40px;
+ }

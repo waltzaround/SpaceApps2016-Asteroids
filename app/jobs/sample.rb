@@ -4,6 +4,6 @@ Dashing.scheduler.every '2s' do
   last_valuation = current_valuation
   current_valuation = 200
 
-  Dashing.send_event('valuation', { current: current_valuation, last: last_valuation })
+  # Dashing.send_event('valuation', { current: current_valuation, last: last_valuation })
   Dashing.send_event('synergy',   { value: rand(100) })
 end

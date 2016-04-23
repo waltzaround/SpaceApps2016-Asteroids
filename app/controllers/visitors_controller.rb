@@ -1,4 +1,5 @@
 require 'net/http'
+require 'json'
 class VisitorsController < ApplicationController
   before_action :authenticate_user!
   def index
@@ -9,6 +10,7 @@ class VisitorsController < ApplicationController
     #   p response
     # end
     res = Net::HTTP.get_response(uri)
-    p res.body
+    @asteroids = JSON.parse(res.body)
+    p @asteroids
   end
 end

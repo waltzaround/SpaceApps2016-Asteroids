@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" src=url(<%= asset_path 'exoprospect.png' %>)>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title><%= content_for?(:title) ? yield(:title) : "Exo Prospect" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Exo Prospect" %>">
     <%= stylesheet_link_tag 'application', media: 'all' %>

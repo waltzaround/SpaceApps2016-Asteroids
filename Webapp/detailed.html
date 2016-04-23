@@ -21,9 +21,10 @@
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
 
-    <!--    Chartist-->
-    <link rel="stylesheet" href="css/chartist.css">
-    <script src="js/chartist.js"></script>
+
+
+    <!--    Main CSS-->
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -87,49 +88,46 @@
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1 class="page-header">Dashboard</h1>
-
-                <div class="ct-chart">
-                    <script>
-                        // Our labels and three data series
-                        var data = {
-                            labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5', 'Week6'],
-                            series: [
-    [5, 4, 3, 7, 5, 10],
-    [3, 2, 9, 5, 4, 6],
-    [2, 1, -3, -4, -2, 0]
-  ]
-                        };
-
-                        // We are setting a few options for our chart and override the defaults
-                        var options = {
-                            // Don't draw the line chart points
-                            showPoint: false,
-                            // Disable line smoothing
-                            lineSmooth: false,
-                            // X-Axis specific configuration
-                            axisX: {
-                                // We can disable the grid for this axis
-                                showGrid: false,
-                                // and also don't show the label
-                                showLabel: false
-                            },
-                            // Y-Axis specific configuration
-                            axisY: {
-                                // Lets offset the chart a bit from the labels
-                                offset: 60,
-                                // The label interpolation function enables you to modify the values
-                                // used for the labels on each axis. Here we are converting the
-                                // values into million pound.
-                                labelInterpolationFnc: function (value) {
-                                    return '$' + value + 'm';
-                                }
-                            }
-                        };
-
-                        // All you need to do is pass your configuration as third parameter to the chart function
-                        new Chartist.Line('.ct-chart', data, options);
-                    </script>
+                <div class="col-md-8 detailed-pic">
+                    <img src="/Webapp/img/asteroidBelt.jpg" alt="">
                 </div>
+                <div class="col-md-4">
+                    <h3>Closest approach date</h3>
+                    <div id="clock"></div>
+                    <hr>
+                    <h3>CAD Value</h3>
+                    <p>$100000</p>
+                    <h3>Estimated Profit</h3>
+                    <p>A tree fiddy</p>
+                    <hr>
+                    <h3>Composition</h3>
+                    <p>stuff</p>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    &nbsp;
+                </div>
+                <div class="col-md-3">
+                    <h3>ID</h3>
+                    <p>1012</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Risks</h3>
+                    <p>Nah</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Timeframe</h3>
+                    <p>420 days</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Margin</h3>
+                    <p>What's margin</p>
+                </div>
+
+
+
+
+
             </div>
         </div>
     </div>
@@ -146,6 +144,13 @@
     <script src="../../assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!--    Final Countdown JS-->
+    <script src="/Webapp/js/jquery.countdown.js"></script>
+    <script>
+        $('#clock').countdown('2020/10/10', function (event) {
+            var $this = $(this).html(event.strftime('' + '<span>%w</span> weeks ' + '<span>%d</span> days ' + '<span>%H</span> hr ' + '<span>%M</span> min ' + '<span>%S</span> sec'));
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,7 @@
+.detailed-pic img {
+    width: 100%;
+}
+
+.detailed-pic::after div {
+    margin: 100px;
+}

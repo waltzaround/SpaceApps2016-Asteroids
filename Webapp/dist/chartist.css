@@ -163,14 +163,14 @@
   fill: #d70206; }
 
 .ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut {
-  stroke: #e1aeaf; }
+  stroke: #f05b4f; }
 .ct-series-b .ct-slice-pie, .ct-series-b .ct-area {
-  fill: #e1aeaf; }
+  fill: #f05b4f; }
 
 .ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut {
-  stroke: #f05b4f; }
+  stroke: #f4c63d; }
 .ct-series-c .ct-slice-pie, .ct-series-c .ct-area {
-  fill: #f05b4f; }
+  fill: #f4c63d; }
 
 .ct-series-d .ct-point, .ct-series-d .ct-line, .ct-series-d .ct-bar, .ct-series-d .ct-slice-donut {
   stroke: #d17905; }

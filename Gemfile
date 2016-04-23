@@ -17,7 +17,7 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
-gem 'mysql2', '~> 0.3.18'
+gem 'unicorn'
 group :development do
   gem 'rails_layout'
   gem 'spring-commands-rspec'
@@ -29,11 +29,10 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'rubocop'
-  gem 'unicorn'
+  gem 'mysql2', '~> 0.3.18'
 end
 group :production do
   gem 'rails_12factor'
-  gem 'unicorn'
   gem 'pg'
 end
 group :test do

@@ -15,6 +15,12 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!--    Dynamic pie chart-->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -25,6 +31,9 @@
 
     <!--    Main CSS-->
     <link rel="stylesheet" href="css/main.css">
+
+    <!--    Exo 2 font-->
+    <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -48,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="#"><img src="/Webapp/img/logowhite.png" style="width: 37%" alt=""></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -73,56 +82,91 @@
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>
                 </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item</a></li>
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                    <li><a href="">More navigation</a></li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">Dashboard</h1>
-                <div class="col-md-8 detailed-pic">
-                    <img src="/Webapp/img/asteroidBelt.jpg" alt="">
+                <h1 class="page-header">Detailed Asteroid View</h1>
+                <div class="col-md-2">
+                    <h3>ID</h3>
+                    <p>1012</p>
                 </div>
-                <div class="col-md-4">
-                    <h3>Closest approach date</h3>
+                <div class="col-md-2">
+                    <h3>Risk Rating</h3>
+                    <p>42%</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Closest Approach Date</h3>
                     <div id="clock"></div>
-                    <hr>
-                    <h3>CAD Value</h3>
-                    <p>$100000</p>
-                    <h3>Estimated Profit</h3>
-                    <p>A tree fiddy</p>
-                    <hr>
-                    <h3>Composition</h3>
-                    <p>stuff</p>
-                    <hr>
                 </div>
                 <div class="col-md-12">
                     &nbsp;
                 </div>
-                <div class="col-md-3">
-                    <h3>ID</h3>
-                    <p>1012</p>
+                <div class="col-md-8 detailed-pic">
+                    <div id="chartdiv"></div>
+                    <script>
+                        var chart = AmCharts.makeChart("chartdiv", {
+                            "type": "pie",
+                            "theme": "light",
+                            "dataProvider": [{
+                                "element": "Water",
+                                "percent": 501.9
+  }, {
+                                "element": "Iron",
+                                "percent": 301.9
+  }, {
+                                "element": "Cobalt",
+                                "percent": 201.1
+  }, {
+                                "element": "Nickel",
+                                "percent": 165.8
+  }, {
+                                "element": "Nitrogen",
+                                "percent": 139.9
+  }, {
+                                "element": "Hydrogen",
+                                "percent": 128.3
+  }, {
+                                "element": "Ammonia",
+                                "percent": 99
+  }],
+                            "valueField": "percent",
+                            "titleField": "element",
+                            "balloon": {
+                                "fixedPosition": true
+                            },
+                            "export": {
+                                "enabled": true
+                            }
+                        });
+                    </script>
                 </div>
-                <div class="col-md-3">
-                    <h3>Risks</h3>
-                    <p>Nah</p>
+                <div class="col-md-4 side-detailed">
+                    <h3>Values at CAD</h3>
+                    <div class="tab-detail">
+
+                        <h4>Estimated Value</h4>
+                        <p>$10000</p>
+                        <h4>Estimated Profit</h4>
+                        <p>Bout tree fiddy $</p>
+                        <h4>Profit Margin</h4>
+                        <p>42%</p>
+                        <h4>Timeframe</h4>
+                        <p>420 dayz</p>
+                    </div>
+                    <hr>
+                    <h3>Value Now</h3>
+                    <div class="tab-detail">
+                        <h4>Estimated Value</h4>
+                        <p>$6000</p>
+                        <h4>Estimated Profit</h4>
+                        <p>Bout tree fiddy $</p>
+                        <h4>Profit Margin</h4>
+                        <p>4.2%</p>
+                        <h4>Timeframe</h4>
+                        <p>4200 dayz</p>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h3>Timeframe</h3>
-                    <p>420 days</p>
-                </div>
-                <div class="col-md-3">
-                    <h3>Margin</h3>
-                    <p>What's margin</p>
-                </div>
+
+
 
 
 

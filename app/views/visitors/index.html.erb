@@ -39,9 +39,9 @@
               <% p asteroid %>
               <tr>
                 <td><%= asteroid["full_name"] %></td>
-                <td><%= asteroid["price"] %></td>
-                <td><%= 100*asteroid["profit"]/asteroid["price"] %></td>
-                <td><%= asteroid["profit"] %></td>
+                <td><%= Round(asteroid["price"]) %></td>
+                <td><%= Round(100*asteroid["profit"]/asteroid["price"]) %></td>
+                <td><%= Round(asteroid["profit"]) %></td>
                 <td><%=  %></td>
               </tr>
             <% end %>

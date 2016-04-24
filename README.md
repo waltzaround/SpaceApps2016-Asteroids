@@ -1,5 +1,15 @@
-Spaceapps2016 Asteroids
+#Exo Prospect
+###Asteroid Mining Marketplace
 ================
+
+Prototype for an asteroid mining marketplace that enables users to invest in future asteroid mining operations.
+
+Project developed as part of the 2016 NASA Space Apps Challenge.
+
+###Dependencies
+
+1. Ruby on Rails
+
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 

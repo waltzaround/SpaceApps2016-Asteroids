@@ -1,0 +1,37 @@
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.detailed-pic img {
+    width: 100%;
+}
+
+.detailed-pic::after div {
+    margin: 100px;
+}
+
+.tab-detail {
+    margin: 0 0 0 2%;
+}
+
+.side-detailed h3 {
+    margin: 0 0 3% 0;
+}
+
+.side-detailed p {
+    margin: 0 0 0 1%;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+    font-size: 11px;
+}
+
+@media (max-width: 991px) {
+    .btn-block {
+        display: block;
+       width: 30%;
+        margin: auto;
+    }
+}

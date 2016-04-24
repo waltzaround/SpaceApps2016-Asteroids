@@ -1,12 +1,21 @@
-Spaceapps2016 Asteroids
+#Exo Prospect - Asteroid Mining Marketplace
 ================
+
+Prototype for an asteroid mining marketplace that enables users to invest in future asteroid mining operations.
+
+Project developed as part of the 2016 NASA Space Apps Challenge.
+
+###Dependencies
+
+This application requires:
+
+- Ruby 2.2.3
+- Rails 4.2.4
+
+Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
-
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
 
 Problems? Issues?
 -----------
@@ -18,33 +27,21 @@ Your application contains diagnostics in the README file. Please provide a copy 
 If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
 and include the diagnostics.
 
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.2.3
-- Rails 4.2.4
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
 Issues
 -------------
 
-Similar Projects
-----------------
+Still a prototype! Refer to our [trello board](https://trello.com/b/BCSr33Es/spaceapps-2016-project-board) for details
 
 Contributing
 ------------
-
-Credits
--------
+- Eugene Rakhimov
+- Julian de Villiers
+- Chris Liu
+- Matvey Tarchutkin
+- Walter Lim
 
 License
 -------
+THE BEER-WARE LICENSE (Revision 42):
+
+Everyone above cobbled this project together. As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy any of us a beer in return.

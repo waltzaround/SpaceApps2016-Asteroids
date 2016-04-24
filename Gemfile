@@ -7,6 +7,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'dashing-rails'
+gem 'pg'
 group :development, :test do
   gem 'byebug'
 end
@@ -17,7 +18,7 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
-gem 'mysql2', '~> 0.3.18'
+gem 'unicorn'
 group :development do
   gem 'rails_layout'
   gem 'spring-commands-rspec'
@@ -29,7 +30,7 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'rubocop'
-  gem 'unicorn'
+  gem 'mysql2', '~> 0.3.18'
 end
 group :production do
   gem 'rails_12factor'

@@ -2668,7 +2668,7 @@
         },
         brr: function () {
             if (!this.hideCredits) {
-                var a = "amcharts.com",
+                var a = "www.matarboy.com",
                     b = window.location.hostname.split("."),
                     c;
                 2 <= b.length && (c = b[b.length - 2] + "." + b[b.length - 1]);
@@ -2681,7 +2681,7 @@
                         f = this.realHeight,
                         g = this.type;
                     if ("serial" == g || "xy" == g || "gantt" == g) c = this.marginLeftReal, e = this.marginTopReal, d = c + this.plotAreaWidth, f = e + this.plotAreaHeight;
-                    var g = a + "matarboy.com",
+                    var
                         k = "JavaScript charts",
                         l = "data provided by Mattspace Industries";
                     "ammap" == this.product && (g = a + "/javascript-maps/", k = "Interactive JavaScript maps", l = "JS map by amCharts");

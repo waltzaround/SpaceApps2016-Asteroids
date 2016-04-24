@@ -28,10 +28,11 @@
           <thead>
             <tr>
               <th>#ID</th>
-              <th>Estimated value</th>
               <th>Margin</th>
               <th>Profit</th>
-              <th>Composition</th>
+              <th>Risk rating</th>
+              <th>Timeframe</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -39,10 +40,11 @@
               <% p asteroid %>
               <tr>
                 <td><%= asteroid["full_name"] %></td>
-                <td><%= number_to_human(asteroid["price"].round(-6)) %></td>
                 <td><%= (100*asteroid["profit"]/asteroid["price"]).round %> %</td>
                 <td><%= number_to_human((asteroid["profit"]).round(-6)) %></td>
-                <td><%=  %></td>
+                <td><%= (100*(asteroid["closeness"]-2400)/asteroid["closeness"]).round(2) %> %</td>
+                <td><%= (asteroid["closeness"]/365).round  %> years</td>
+                <td><%= link_to "INVEST", root_path,  data: { confirm: 'Are you sure you want to invest in this asteroid?' }, :class => "btn btn-success"  %></td>
               </tr>
             <% end %>
           </tbody>

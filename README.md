@@ -35,7 +35,7 @@ Still a prototype! Refer to our [trello board](https://trello.com/b/BCSr33Es/spa
 Contributing
 ------------
 - Eugene Rakhimov
-- Julian De Villiers
+- Julian de Villiers
 - Chris Liu
 - Matvey Tarchutkin
 - Walter Lim

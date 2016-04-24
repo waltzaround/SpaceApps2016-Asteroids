@@ -24,7 +24,7 @@
             <% @asteroids.each do |asteroid| %>
               <% p asteroid %>
               <tr>
-                <td><%= asteroid["full_name"] %></td>
+                <td><a href="/detailed.html" ><%= asteroid["full_name"] %></a></td>
                 <td><%= (100*asteroid["profit"]/asteroid["price"]).round %> %</td>
                 <td><%= number_to_human((asteroid["profit"]).round(-6)) %></td>
                 <td><%= (100*(asteroid["closeness"]-2400)/asteroid["closeness"]).round(2) %> %</td>

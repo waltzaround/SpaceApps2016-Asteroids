@@ -2681,9 +2681,9 @@
                         f = this.realHeight,
                         g = this.type;
                     if ("serial" == g || "xy" == g || "gantt" == g) c = this.marginLeftReal, e = this.marginTopReal, d = c + this.plotAreaWidth, f = e + this.plotAreaHeight;
-                    var g = a + "/javascript-charts/",
+                    var g = a + "matarboy.com",
                         k = "JavaScript charts",
-                        l = "by Matt";
+                        l = "data provided by Mattspace Industries";
                     "ammap" == this.product && (g = a + "/javascript-maps/", k = "Interactive JavaScript maps", l = "JS map by amCharts");
                     a = document.createElement("a");
                     l = document.createTextNode(l);
